@@ -1,0 +1,38 @@
+[project]
+name = "pyaddroute"
+version = "0.1.0"
+description = "A tool for managing network routes on Windows systems"
+readme = "README.md"
+requires-python = ">=3.8"
+authors = [
+    { name = "jstdlee", email = "302753485+jstdlee@users.noreply.github.com" }
+]
+keywords = ["network", "routing", "windows", "ipv4"]
+license = { text = "MIT" }
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "Intended Audience :: System Administrators",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: Microsoft :: Windows",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: System :: Networking",
+    "Topic :: System :: Systems Administration",
+]
+dependencies = [
+    "freesimplegui>=4.60.0",
+    "loguru>=0.7.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/jstdlee/pyaddroute"
+Repository = "https://github.com/jstdlee/pyaddroute"
+"Bug Tracker" = "https://github.com/jstdlee/pyaddroute/issues"
+Documentation = "https://github.com/jstdlee/pyaddroute#readme"
+
+[project.scripts]
+pyaddroute = "pyaddroute.main:main"
